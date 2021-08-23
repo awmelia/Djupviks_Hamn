@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Startsida - Djupvik</title>
+    <meta charset="UTF-8" />
+    <link href="stylesheets/reset.css" rel="stylesheet" />
+    <link href="stylesheets/djupvik.css" rel="stylesheet" />
+    <meta name="viewport" content= "width = device-width, initial-scale = 1, maximum-scale = 2">
+    <meta name="description" content="Djupviks hamn och fiskeförening beskrivs i denna introducerande sida, tillsammans med information kring nyheter som berör föreningen." />
+  </head>
+  
+  <body>
+    <div id="container"> 
+      <aside> <!--used because it is related to content in main but should be logically seperated as it is repeated in all pages of the site-->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"> <!--Used for hamburger-nav-->
+        <nav> <!--is applied to present the main navigation of the site-->
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="#" id="activePage">Start</a></li>
+            <li><a href="html/guests.html">Gästhamnen</a></li>
+            <li><a href="html/member.html">Medlemskap</a></li>
+            <li><a href="html/history.html">Om oss</a></li>
+            <li><a href="html/touristLocations.html">Turistmål</a></li>
+            <li><a href="html/contact.html">Kontakt</a></li>
+            <li><a href="html/english.html">English</a></li>
+          </ul>
+        </nav>
+        <!--Used for hamburger-nav-->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <header> <!--is applied to introduce the site-->
+          <picture>
+            <source media="(min-width: 640px)" srcset="images/large/startShed_large.jpg 1600w, images/medium/startShed_medium.jpg 1280w" sizes="80vw"> <img src="images/small/startShed_small.jpg" alt="Flera stora skjul i olika nyanser av brunt, vitt och beiget som är lokaliserade bredvid sandkanten på en fin dag i Djupvik" />
+          </picture>
+          <div class="title"><h1>Djupvik</h1></div>
+        </header>
+      </aside>
+
+      <main>  <!--start of the main content of the page-->
+        <section class="s1"> <!--Start of section 1-->
+          <h2>ÖVERGRIPANDE INFO:</h2>
+          <p>Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla Karlsö. Hamnen är otroligt vackert belägen i anslutning till ett gammalt Gotländskt fiskeläge bestående av fiskebodar från sent 1800-tal. Husen är grupperade i tre rader, mellan dem ligger gistgarden där man torkar nät och närmast stranden ligger båthusen. Från fiskeläget har man fri utsikt mot de båda Karlsöarna. <br><br>Ansvaret för hamnen och fiskeläget har Djupviks hamnförening, som är en ideell förening som aktivt verkar för att bibehålla och utveckla Djupvik som fiskehamn och som fritidsbåtshamn för de många närboende och sommarboende. <br><br>Föreningen driver en glasskiosk och kaffeservering på sommartid i ett gammalt båthus vid hamnen. Ett par hundra meter ovanför hamnen ligger Djupviks Hotell, ett hotell med restaurang och bra standard. <br><br>Det finns även toaletter i hamnen varav en som är tillgänglighetsanpassad för rullstolar och rollatorer.</p>
+        </section> <!--End of section 1-->
+
+        <section class="s2"> <!--A new section is used because the dialog has shifted from information about the Djupvik as a whole to news-->
+          <h3>SENASTE NYTT:</h3>
+          <article> <!--An article element is applied to present the different news within-->
+            <h4>Hamnjobb</h4>
+            <h5><time datetime="2019-04-06">2019-04-06</time></h5>
+            <p>Lördagen den 6 april samlades ett antal av föreningens medlemmar för arbete i hamnen. Kiosken, kajerna och stranden städades. Kajer lagades och gräs brändes. Diverse fix på många håll. Vädret var bra och korven god. Det som återstår inför säsongen är att ta bort släke från stranden, att sätta upp ramp vid kiosken och att fylla kiosken med varor.<br></p>
+
+            <h4><br>Succé för hamnens dag!</h4>
+            <h5><time datetime="2018-07-16">2018-07-16</time></h5>
+            <p>Lördagen den 16 juli arrangerade föreningen Djupviks hamn i Eksta <b>”Hamnens dag”</b> i Djupvik. Vårt arbete har med åren alltmer också inriktats på att alla besökare, även de som kommer landvägen skall trivas i det vackra hamnområdet. Nu bjöds det in till <b>”Hamnens dag”</b>. På plats fanns sjöfartsverkets SAR-helikopter, Sjöräddningens båt Hwitstjärna, släckningsbil från räddningstjänsten i Klintehamn, russ från Gannarve och ett antal loppisförsäljare. Aktiviteten lockade ett stort antal besökare
+            <br><br>Uppskattningsvis 1000 besökare sökte sig under dagen till Djupvik. Intresset var stort för de besökande organisationerna som informerade och alla fick möjlighet att titta och ställa frågor. Barnen fick rida, de bjöds på bulle och dricka och många prövade lyckan i fiskdammen. Det fanns möjlighet att handla kaffe, korv, dricka och glass. Många dröjde sig kvar i hamnområdet och trivdes i det inledningsvis lite blåsiga men vackra vädret.
+            </p>
+            <p id="id">
+              <picture>
+                <source media="(min-width: 142px)" srcset="images/large/hamnensDag_large.jpg 474w, images/medium/hamnensDag_medium.jpg 308w" sizes="80vw"> <img src="images/small/hamnensDag_small.jpg" alt="En samling människor som antingen sitter på stenar och ser upp mot huset, alternativ personer som står vid huset och utför handgester mot publiken på stenarna" />
+              </picture>Foto: Björn Hjernquist
+            </p>
+
+          </article> <!--End of article-->
+        </section> <!--End of section 2-->
+      </main> <!--End of main-->
+
+      <aside> <!--used because it is related to content in main but should be logically seperated as it is repeated in all pages of the site-->
+        <footer>
+          <hr>
+          <p> <!--Information about copyright-->
+            <small>© Copyright 2021 | Djupvikshamn.se | info@djupvikshamn.se</small>
+          </p>
+        </footer>
+      </aside>
+      
+      <script type="module" src="./JavaScript/hamburgare.js"></script>
+    </div> <!--end of container-->
+    
+  </body>
+</html>

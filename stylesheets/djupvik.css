@@ -1,0 +1,1330 @@
+/*note: s stands for style (s1-s6).*/
+
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url(../fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Merriweather Regular';
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+
+html {
+  font-size: 105%;
+}
+
+#container{
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: linear-gradient(to top, #fff, #F2F2F2, #D7E3F3), #F2F2F2;
+  background-repeat: repeat-x;
+}
+
+body, aside {
+  font-family: 'Merriweather Regular', Arial, Verdana, Helvetica, sans-serif;
+  color: #0D0000; 
+}
+
+header {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+section{
+  padding-bottom: 3rem;
+}
+
+article, section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+} 
+
+wrapper, footer {
+  background-color: #F2F2F2;
+}
+
+/*------------------------Style of text*/
+
+h1, h2, h3 {
+  font-family: 'Kaushan Script', "Times New Roman", Georgia, serif;
+  color: #592202;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+h3{
+  font-size: 1.2rem;
+  margin: 1.7rem 1rem 1.5rem;
+}
+
+h4{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #592202;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h5{
+  font-size: 0.9rem;
+  color: #592202;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+dl {
+  line-height: 2rem;
+}
+
+dt {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+dd {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+/*-------------------------------------------------*/
+
+/*------------------------------Style of images*/
+img{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[alt="Flera större avlånga stenar i en oval formation framför en barrskog bredvid en rudimentär stig."] {
+  width: 95%;
+}
+
+img[alt="En illustation av Konrad Jakobsson som är föråldrad till den punkt att bilden är helt brun till färgen när han sitter i en ravin med stora stenformationer i bakrunden."] {
+  float: right;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 55%;
+}
+/*--------------------------------------------*/
+
+/*------------------------Style of navigation*/
+nav {
+  background-color: #D7E3F3;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+}
+
+nav ul li {
+  width: 50%;
+  padding-top: 2rem;
+  margin: 0.5rem;
+}
+
+nav a {
+  color: #0D0000;
+  text-decoration: none;
+}
+
+nav a:focus, nav a:hover, nav a:active{
+  color: #7A3123;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-decoration: underline;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+#activePage {
+  color: #7A3123;
+  font-weight: bold;
+}
+/*------------------------------------------*/
+
+/*------------------------Style of tables*/
+table{
+  width: 100%;
+  max-width: 600px;
+}
+
+td,th{
+  border: 1px solid #7A3123;
+  padding: 0.3rem;
+}
+
+th {
+  font-weight: bold;
+  background-color: #592202;
+  color: #F2F2F2;
+}
+
+td{
+  text-align: center;
+}
+
+tr:nth-of-type(odd){
+  background-color: #8c533b60;
+}
+
+#id {
+  font-style: italic;
+  font-size: 1rem;
+}
+/*---------------------------------------*/
+
+/*------------------------Style of forms*/
+input, select, textarea{
+  border: 1px solid #592202;
+  color: #000;
+  font-size: 1.3rem;
+  width: 90%;
+}
+
+input[type="submit"], input[type="reset"]{
+  background-color: #592202;
+  color: #FFF;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  width: 95%;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline: none;
+  background-color: #7A3123;
+  color: #F2F2F2;
+}
+/*--------------------------------------*/
+
+
+/*------------------------*Size for mobile - standing*-------------------------*/
+@media(min-width:300px) and (max-width:420px) {
+  
+  body{
+    text-align: center;
+  }
+
+  header{
+    padding-top: 4.3rem;
+  }
+
+  header img {
+    border-bottom: solid 0.1rem #7A3123;
+  }
+  
+  .title {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0.8rem;
+    text-align: center;
+    width: 60%;
+  }
+
+  section, .s4 {
+    border-bottom: solid 0.1rem #7A3123;
+  }
+
+  .s6 {
+    border-top: solid 0.1rem #7A3123;
+  }
+
+  .s5 {
+    border-bottom: none;
+  }
+
+  nav{
+    display: none;
+    text-transform: uppercase;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: inline-block;
+  }
+
+  .nav-ul li {
+    border: outset 0.15rem #FFF;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+  }
+
+  #activePage {
+    border: inset 0.2rem #FFF;
+  }
+
+  p {
+    text-align: center; 
+    text-decoration: solid;
+  }
+
+  .namnF {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  dt{
+    text-align: left;
+  }
+
+  /*------------------------------code for hamburger-navigation*/
+
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .nav-toggle-label span, 
+  .nav-toggle-label span::before, 
+  .nav-toggle-label span::after {
+    display: block;
+    background: #7A3123;
+    height: 0.3rem;
+    width: 2rem;
+    position: relative;
+    transition: all ease-in-out 500ms;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 0.6rem;
+  }
+
+  .nav-toggle-label span::after {
+    top: 0.6rem;
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 1.8rem;
+    right: 1.5rem;
+  }
+  /*-------------------------------------------------*/
+
+  /*------------------------------code for animation*/
+  .open {
+    position: absolute;
+    top: 1.8rem;
+    right: 1.4rem;
+  }
+
+  .open span, 
+  .open span::before, 
+  .open span::after {
+    display: block;
+    background: #7A3123;
+    height: 5px;
+    width: 2rem;
+    position: relative;
+    transition: all ease-in-out 500ms;
+  }
+
+  .open span::before,
+  .open span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .open span::before {
+    bottom: 0.6rem;
+  }
+
+  .open span::after {
+    top: 0.6rem;
+  }
+
+  .open {
+    transform: rotate(45deg);
+  }
+
+  .open span::before {
+    opacity: 0;
+  }
+
+  .open span::after {
+    transform: translateY(-9.5px) rotate(-90deg);
+  }
+
+  /*To remove unnecessary padding*/
+  .open ~ header {
+    padding-top: 0rem;
+  }
+  /*-------------------------------------------------*/
+}
+/*--------------------------------------------------------------------------------------*/
+
+
+/*------------------------Size for mobile - laying down + some ipad - standing-------------------------*/
+@media(min-width:421px) and (max-width:750px) {
+
+  #container {
+    display: inline-block;
+  }
+
+  header{
+    padding-top: 7rem;
+    text-align: center;
+  }
+
+  header img {
+    border-bottom: solid 0.1rem #7A3123;
+  }
+  
+  .title {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1.2rem;
+    text-align: center;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+  
+  h3{
+    font-size: 1.4rem;
+  }
+  
+  h4{
+    font-size: 1.3rem;
+  }
+  
+  h5{
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  nav{
+    display: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    font-size: 1.15rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    display: inline-block;
+  }
+
+  .nav-ul li {
+    border: outset 0.15rem #FFF;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+  }
+
+  #activePage {
+    border: inset 0.2rem #FFF;
+  }
+
+  /*------------------------------code for hamburger-navigation*/
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .nav-toggle-label span, 
+  .nav-toggle-label span::before, 
+  .nav-toggle-label span::after {
+    display: block;
+    background: #7A3123;
+    height: 0.5rem;
+    width: 3.7rem;
+    position: relative;
+    transition: all ease-in-out 500ms;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 1rem;
+  }
+
+  .nav-toggle-label span::after {
+    top: 1rem;
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 3rem;
+    right: 1.5rem;
+  }
+  /*-------------------------------------------------*/
+
+  /*-------------------------------code for animation of hamburger*/
+  .open {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.4rem;
+  }
+
+  .open span, 
+  .open span::before, 
+  .open span::after {
+    display: block;
+    background: #7A3123;
+    height: 0.55rem;
+    width: 3.5rem;
+    position: relative;
+    transition: all ease-in-out 500ms;
+  }
+
+  .open span::before,
+  .open span::after {
+    content: '';
+    position: absolute;
+  }
+
+  .open span::before {
+    bottom: 0.6rem;
+  }
+
+  .open span::after {
+    top: 0.6rem;
+  }
+
+  .open {
+    transform: rotate(45deg);
+  }
+
+  .open span::before {
+    opacity: 0;
+  }
+
+  .open span::after {
+    transform: translateY(-9.5px) rotate(-90deg);
+  }
+
+  /*Checks if header is afterwards to get rid of unnessecary padding*/
+  .open ~ header {
+    padding-top: 0rem;
+  }
+  /*-------------------------------------------------*/
+
+  /*---------------------------------Creating corners*/
+  section::before{
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+  }
+  section:after {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+    transform: rotate(180deg);
+  }
+  /*-----------------------------------------------*/
+}
+/*--------------------------------------------------------------------------------------*/
+
+
+
+/*------*Sizing of tables to be able to fit phones to smaller ipads*-----------*/
+@media(min-width:280px) and (max-width:600px) {
+  table, thead, tbody, th, td, tr{
+    display: block;
+  }
+  thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr{
+    border: 0.3rem solid #7A3123;
+  }
+  td{
+    position: relative;
+    padding-left: 20%;
+    text-align: end;
+  }
+  td:before {
+    position: absolute;
+    left: 0.4rem;
+    width: 15%;
+    padding-right: 1rem;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+  td:nth-of-type(1):before{
+    content: "First";
+  }
+  td:nth-of-type(2):before{
+    content: "Last";
+  }
+  td:nth-of-type(3):before{
+    content: "Mail";
+  }
+  td:nth-of-type(4):before{
+    content: "Number";
+  }
+  tr:nth-of-type(odd){
+    background-color: #F2F2F2;
+  }
+
+  /*-------------specifically for weather-tables in guest.html*/
+  .weather_table {
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 14rem;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+  #time:before, #temp:before, #wind:before, #cloud:before {
+    position: absolute;
+    left: 0.6rem;
+    width: 40%;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  #time, #temp, #wind, #cloud{
+    position: relative;
+    padding-left: 10%;
+    text-align: end;
+    border: 1px solid #592202;
+    padding: 0.3rem;
+  }
+
+  #time th, #temp th, #wind th, #cloud th {
+    font-weight: bold;
+    background-color: #7A3123;
+    color: #F2F2F2;
+  }
+
+  #wind img {
+    margin-right: 0rem;
+  }
+
+  #weather_tr:nth-of-type(even){
+    background-color: #8c533b60;
+  }
+
+  #weather_tr{
+    border: 0.3rem solid #7A3123;
+  }
+
+  #time:nth-of-type(1):before{
+    content: "KL";
+  }
+  #temp:nth-of-type(2):before{
+    content: "Temp";
+  }
+  #wind:nth-of-type(3):before{
+    content: "Vind";
+  }
+  #cloud:nth-of-type(4):before{
+    content: "Moln";
+  }
+  /*-----------------------------------------------*/
+}
+/*--------------------------------------------------------------------------------------*/
+
+
+/*----------------------------*Ipads all the way to laptops*-----------------------------*/
+@media(min-width:751px) and (max-width:1100px) {
+
+  #container {
+    display: inline-block;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    text-align: center;
+    width: 60%;
+  }
+
+  nav ul {
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border-bottom: solid #7A3123 0.15rem;
+  }
+
+  nav ul li {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+
+  nav a:focus, nav a:hover, nav a:active{
+    letter-spacing: 0.1rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2{
+    font-size: 2.2rem;
+    padding-bottom: 0.3em;
+  }
+  
+  h3{
+    font-size: 1.8em;
+    padding-bottom: 0.3rem;
+  }
+  
+  h4{
+    font-size: 1.6rem;
+  }
+  
+  h5{
+    font-size: 1.7rem;
+  }
+
+  p {
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .s1 p {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  .s2 p {
+    text-align: center;
+    padding-right: 1rem;
+  }
+  
+  section {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .s1 {
+    width: 40%;
+    float: left;
+    padding-left: 1rem;
+  }
+  
+  .s2 {
+    width: 55%;
+    float: right;
+  }
+
+
+/*---------------------------------Creating corners*/
+  .s1::before {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: -1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+  }
+  .s1::after {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+    transform: rotate(90deg);
+  }
+
+  .s2::before{
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+  }
+
+  .s2::after {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+    transform: rotate(180deg);
+  }
+/*-----------------------------------------*/
+
+  .s3 {
+    clear: both;
+    border-top: 0.4rem dotted #7A3123;
+    border-bottom: 0.4rem dotted #7A3123;
+    text-align: center;
+  }
+
+  .s3 table, .weather_table {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #weather_tr{
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .s4 {
+    margin-bottom: 4rem;
+    width: 80%;
+  }
+
+  .s4 ~ .s4 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: 0.4rem dotted #7A3123;
+  }
+
+  .s4 p {
+    text-align: center;
+  }
+
+  .s4 h4 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  } 
+  
+  /*Contactinfomation table on member.html*/
+  #contactT{
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+
+  /*-------------------------Making the descriptions easier to read*/
+  dt, dd {
+    font-size: 1.3rem;
+  }
+  dl {
+    line-height: 3rem; 
+    
+  }
+  dt {
+    letter-spacing: 0.2rem;
+  }
+  dd {
+    margin-bottom: 1rem;
+    border-bottom: solid 0.1rem black;
+  }
+
+  .namnF {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  /*-------------------------*/
+
+  footer{
+    clear: both;
+  }
+
+  footer p {
+    font-size: 1rem;
+    line-height: 0.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+}
+/*--------------------------------------------------------------------------------------*/
+
+/*-------------------------*For easier to read on larger screens*-------------------------------*/
+@media(min-width:850px) and (max-width:990px) {
+  nav ul {
+    font-size: 1.4rem;
+  }
+
+  nav ul li {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+  
+  h1 {
+    font-size: 7em;
+  }
+  
+  .title {
+    top: 8rem;
+  }
+}
+
+@media(min-width:991px) and (max-width:1100px) {
+  nav ul {
+    font-size: 1.6rem;
+  }
+  
+  nav ul li {
+    margin: 0rem 1.1rem 0rem 0rem;
+  }
+  
+  h1 {
+    font-size: 8em;
+  }
+  
+  .title {
+    top: 8rem;
+  }
+}
+/*--------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------*From ipads(laying down) to larger pc-screens*----------------------*/
+@media(min-width:1101px) and (max-width:2560px) {
+
+  #container {
+    display: inline-block;
+  }
+
+  main {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .title {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    text-align: center;
+    width: 60%;
+  }
+
+  header {
+    padding-bottom: 2rem;
+  }
+
+  nav ul {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border-bottom: solid #7A3123 0.15rem;
+  }
+
+  nav ul li {
+    margin: 0rem 1.2rem 0rem 0rem;
+  }
+
+  nav a:focus, nav a:hover, nav a:active{
+    letter-spacing: 0.2rem;
+  }
+
+  h1 {
+    font-size: 7.5rem;
+  }
+
+  h2{
+    font-size: 2.2rem;
+    padding-bottom: 0.3em;
+  }
+  
+  h3{
+    font-size: 1.8em;
+    padding-bottom: 0.3rem;
+  }
+  
+  h4{
+    font-size: 1.6rem;
+  }
+  
+  h5{
+    font-size: 1.7rem;
+  }
+
+  p {
+    line-height: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .s1 p {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  .s2 p {
+    text-align: center;
+    padding-right: 1rem;
+  }
+  
+  section {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .s1 {
+    width: 40%;
+    float: left;
+    padding-left: 1rem;
+  } 
+  
+  .s2 {
+    width: 55%;
+    float: right;
+  }
+
+  /*---------------------------------Creating corners*/
+  
+  .s1::before {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: -1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+  }
+  .s1::after {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+    transform: rotate(90deg);
+  }
+
+  .s2::before{
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+  }
+
+  .s2::after {
+    display: block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0rem;
+    border-top: 0.4rem solid #7A3123;
+    border-right: 0.4rem solid #7A3123;
+    transform: rotate(180deg);
+  }
+
+  /*---------------------------------------*/
+
+  .s3 {
+    clear: both;
+    border-top: 0.4rem dotted #7A3123;
+    border-bottom: 0.4rem dotted #7A3123;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+  .s3 table, .weather_table {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #weather_tr{
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  #contactT{
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .s4 {
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .s4 p {
+    text-align: center;
+  }
+
+  .s4 h4 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .s5, .s6{
+    text-align: center;
+  }
+  
+  footer{
+    clear: both;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+    line-height: 0.2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-style: italic;
+  }
+
+  /*-------------------Making the descriptions easier to read*/
+  dt, dd {
+    font-size: 1.3rem;
+  }
+  dl {
+    line-height: 3rem; 
+    
+  }
+  dt {
+    letter-spacing: 0.2rem;
+  }
+  dd {
+    margin-bottom: 1rem;
+    border-bottom: solid 0.1rem black;
+  }
+
+  .s4 ~ .s4 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: 0.2rem solid #7A3123;
+  }
+
+  .namnF {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+   /*-------------------------------------------*/
+
+}
+/*--------------------------------------------------------------------------------------*/
+
+/*-------------------------*For better view at larger sizes*----------------------------*/
+@media(min-width:1800px) and (max-width:2560px) {
+
+  main {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  header {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .title {
+    top: 10rem;
+  }
+
+  nav ul {
+    font-size: 2.5rem;
+  }
+
+  nav ul li {
+    margin: 0rem 2rem 0rem 0rem;
+  }
+
+  nav a:focus, nav a:hover, nav a:active{
+    letter-spacing: 0.3rem;
+  }
+
+
+  h1 {
+    font-size: 10rem;
+  }
+
+  h2{
+    font-size: 3rem;
+  }
+  
+  h3{
+    font-size: 2.5em;
+    padding-bottom: 1rem;
+  }
+  
+  h4{
+    font-size: 2rem;
+  }
+  
+  h5{
+    font-size: 1.8rem;
+  }
+
+  p {
+    line-height: 3rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  #weather_tr{
+    height: 6rem;
+    font-size: 2.3rem;
+  }
+
+  #contactT{
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  article{
+    display: inline-block;
+  }
+
+  .s4 {
+    margin-bottom: 4rem;
+    width: 80%;
+  }
+
+  .s5 {
+    float: right;
+    width: 45%;
+  }
+
+  .s6 {
+    float: left;
+    width: 45%;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+
+  .namnF {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+  }
+
+  dt, dd {
+    font-size: 2rem;
+  }
+
+  dt{
+    text-align: left;
+  }
+
+  dl {
+    line-height: 5rem; 
+    
+  }
+
+  input, select, textarea{
+    font-size: 2em;
+  }
+
+  input[type="submit"], input[type="reset"]{
+    font-size: 2rem;
+  }
+}
+/*--------------------------------------------------------------------------------------*/

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Kontakt - Djupvik</title>
+    <meta charset="UTF-8" />
+    <link href="../stylesheets/reset.css" rel="stylesheet" />
+    <link href="../stylesheets/djupvik.css" rel="stylesheet" />
+    <meta name="viewport" content= "width = device-width, initial-scale = 1, maximum-scale = 2">
+    <meta name="description" content="Här finns möjligheter att se över kontaktinformation eller fylla i ett kontaktformulär för direktkontakt via sidan." />
+  </head>
+  
+  <body>
+    <div id="container"> 
+      <aside>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle"> 
+        <nav> 
+          <ul class="nav-ul" id="nav-ul">
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="guests.html" >Gästhamnen</a></li>
+            <li><a href="member.html">Medlemskap</a></li>
+            <li><a href="history.html" >Om oss</a></li>
+            <li><a href="touristLocations.html">Turistmål</a></li>
+            <li><a href="#" id="activePage">Kontakt</a></li>
+            <li><a href="english.html">English</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+        <header> 
+          <picture>
+            <source media="(min-width: 640px)" srcset="../images/large/startShed_large.jpg 1600w, ../images/medium/startShed_medium.jpg 1280w" sizes="80vw"> <img src="../images/small/startShed_small.jpg" alt="Flera stora skjul i olika nyanser av brunt, vitt och beiget som är lokaliserade bredvid sandkanten på en fin dag i Djupvik" />
+          </picture>
+          <div class="title"><h1>Djupvik</h1></div>
+        </header>
+      </aside>
+
+      <main>  <!--start of the main content of the page-->
+        <article> <!--I created two different section as they are both ways to contact Djupvik, but in different ways-->
+          <h2>kontaktinformation</h2>
+          <section class="s5">
+            <h3>Kontaktuppgifter</h3>
+            <p>
+              Hamnfogde Bo Lautin, mobil 0707-920310 <br><br>
+              Djupviks hamnförening<br>
+              c/o Ekholm<br>
+              Eksta Hägur 170<br>
+              623 54 Klintehamn
+            </p>
+          </section> <!--End of section 1-->
+            
+          <section class="s6">
+            <h3>Kontaktformulär</h3>
+            <!--To ensure most importat fields gets answered properly-->
+            <p>Obligatoriska fält är markerade med *.</p>
+            <form method="post" action="thanks.html">
+              <p>
+                <label for="Title">Rubrik för ärendet:</label>
+                <input type="text" name="title" id="Title" />
+              </p>
+              <p>
+                <label for="Explaination">Beskriv ärendet*:</label>
+                <textarea name="explaination" id="Explaination" rows="5" cols="30"  required>
+                </textarea>
+              </p>
+              <p>
+                <label for="About">Vad gäller ärendet:</label>
+                <select name="about" id="About">
+                  <option value="boat">Båtplats</option>
+                  <option value="membership">Medlemskap</option>
+                  <option value="other">Övrigt</option>
+                </select>
+              </p>
+              <p>
+                <label for="Phone">Telefonnummer*(000-0000000):</label>
+                <input type="tel" name="phone" id="Phone" pattern="[0-9]{3}-[0-9]{7}" required /> <!--Swedish mobilephone pattern-->
+              </p>
+              <p> 
+                <label for="Email">E-mail*:</label>
+                <input type="email" name="email" id="Email" required />
+              </p>
+              <p> 
+                <input type="submit" value="Skicka in"/>
+                <input type="reset" value="Rensa" />
+              </p>
+            </form> <!--End of form-->
+          </section> <!--End of section 2-->
+        </article> <!--End of article-->
+      </main> <!--End of main-->
+
+      <aside> 
+        <footer>
+          <hr>
+          <p> 
+            <small>© Copyright 2021 | Djupvikshamn.se | info@djupvikshamn.se</small>
+          </p>
+        </footer>
+      </aside>
+
+      <script type="module" src="../JavaScript/hamburgare.js"></script>
+    </div> <!--end of container-->
+  </body>
+</html>
